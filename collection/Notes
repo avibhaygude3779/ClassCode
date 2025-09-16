@@ -1,0 +1,120 @@
+package collection;
+
+/*  collection(i) :- it is a container where we can store multiple type of data
+                    -supermost interface it extends list(i) ,set(i) ,queue(I) (SQL)
+                    -iterable is a super most interface of collection
+                    - it is dynamic in size
+                    - it have multiple predefined method
+                    -collection framework does not support premitive data types so we have convert premitive to nonpremitive
+
+         List(i): - it is in a util package
+                  - introduced  in jdk 1.2
+                  -it allow any number of null value
+                  - it allow duplicate data
+                  -order of insertion is maintain (store and retrive order wise)
+                  - we use list when we have to set and get data
+
+            Arraylist(class):- present in list interface
+                            - default capacity is 10
+                            -it have incremental capacity (current capacity*(3/2)+1 ) {10*2/3+1 = 16}
+                            - data structure is resizable array
+                            -storage type is index base
+                            - best choice is to retrivel the data
+                            - worst choice is to manipulating the data (insertion and deletion)
+                            -arraylist contain three constructor arraylist() , arraylist(initial capacity) , arraylist(initial capacity,default capacity)
+
+            linkedList(class) :-
+                         -linkedList does not have default capacity
+                        - incremental capacity 0 (no incremental capacity)
+                        - data structure is growable array
+                        - storage type index base
+                        - best choice manipulationg the data
+                        - worst choice retrival the data
+
+            vector(class) :-  -vector same as arraylist
+                             -vector is a legacy class
+                             - in a vector incremental capacity is diff from arraylist incremental capacity
+                             - incremental capacity of vector is current capacity*2
+
+         set(i):- it does not allow any kind of duplication
+                 - order of insertion is does not maintain
+                 - storage type is hash table, not a index base
+                 - it allow null value only once
+                 (
+                    hashTable :- it store the value in terms of key and value pair
+                             -key store the hash code of particular object
+                             -value store the object
+                 )
+                -data structure of set is hash table
+                -we can not use get method in set because set does not have index value
+
+
+            Treeset(class):-Treeset add a data in the  incrementing  order
+                           -it used to remove the duplicate data when the order of insertion is  in assending order
+                           -Treeset does not allow heterogenius type of data (it gives class cast exception) beacause it does not compare
+                           - compareTo method is present in comparable interface and rapper class and string class implements comparable interface
+                              and bydefult it override the compareto method
+
+            LinkedhashSet(class):-it is a combination of hashset and linkedList
+                                 -it does not have default capacity
+                                 - it maintain the order of insertion
+                                 -it used to remove the duplicate data but when the order of insertion is  maindatory
+
+            Hashset(Class):-it used to remove the duplicate data but when the order of insertion is does not maindatory
+                            - it does not maiantain order of insertion
+                            -default capacity of hashset is 16
+                            -incremental capacity of hashset is 0.75% (28)
+                            -to remove duplicate elements when order of insertion is not maindatory
+                            -hashset have three constructor
+                           -realtime - contatct List , GmailId , instagram username .
+         Queue(i):-
+         Map(i):- Map is a container object which store the data in key value pair
+                - Key in Map are unique bunt value can be duplicate
+                - Only one null key is allowed and multiple null value can be allowed
+                -  Map does not fallow insertion order
+
+     collections (Class) :-
+
+Rapper class :- it is nothing but non primitive version of primitive data type
+     AutoBoxing :- converting primitive to non primitive
+     AutoUnBoxing :- converting non primitive to primitive
+
+Generics :- we define it in a single angular braces <>
+           -generics is used  to maintain unique type of data in collection
+           - object generics is used when collection contain  heterogeneous data because object is a super most class
+
+Comparable :- it is predefined interface present in java.lang package
+            - introduced from 1.2
+            -it has abstract method which is compareTo
+            -comparable interface is used to compare object and sort them
+            - it also called as default sorting
+            -Syntax :-public int compareTo(object o)
+            -Rules:-class has to implement comparable interface
+                   -specify the generics type of  object that we are going to compare
+                   -override the compare to method and specify the business logic of comparing or sorting
+           -used for default sorting
+
+comparator (i):-it is predefined interface present in java.util package
+               -introduced from 1.2
+               -it has abract method compare
+               Systax:- public int compare(object 01 , object 02)
+               -Rules:- design a new class in such a way which implements the comparetor interface  and specify the generics type
+                      -import the comparator interface
+                      -override the compare method by specifying the business logic for comparing and sorting
+                      -pass the object of the class which has the sorting logic to the constructor of the tree set
+               -used for customize sorting comparators used eg.amazon,swiggy
+
+Stack(class) :- child class of vector
+              -always extend vector class
+               -introduced in jdk 1.2
+               -present in java util package
+               -there is only one constructor which is default
+              -predifined method in stack pop(),push(),search(),isEmpty() ,peek()
+              -work on the principle of LiFo (last in first out)
+              -we can able to insert heterogeneous type of data in stack
+              -using peek() method we can able to read data but we can not able to delete that data
+              -using pop() method we can able to read topmost data and it remove from a stack
+              -using search() method we can search data in stack by giving object to it
+
+
+*/

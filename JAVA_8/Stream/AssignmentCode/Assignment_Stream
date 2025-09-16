@@ -1,0 +1,15 @@
+1	Find list of employees whose name starts with alphabet A
+2	Group The employees By Department Names
+3	Find the total count of employees using stream
+4	Find the max age of employees
+5	Find all department names
+6	Find the count of employee in each department
+7	Find the list of employees whose age is less than 30
+8	Find the list of employees whose age is in between 26 and 31
+9	Find the average age of male and female employee
+10	Find the department who is having maximum number of employee
+11	Find the Employee who stays in Delhi and sort them by their names
+12	Find the average salary in all departments
+13	Find the highest salary in each department
+14	Find the list of employee and sort them by their salary
+15	Find the employee who has second highest salary

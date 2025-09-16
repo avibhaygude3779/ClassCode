@@ -1,0 +1,99 @@
+ Multithreading in Java:
+Multithreading is a programming technique where multiple threads run concurrently within a single program,
+allowing it to perform multiple tasks at the same time.
+
+ Why use it?
+✅ Improves performance (especially on multi-core CPUs)
+
+✅ Makes programs faster and more responsive
+
+✅ Useful for tasks like downloading, animations, games, etc.
+
+ Example:
+One thread handles user input
+Another thread plays background music
+Another thread loads images or data
+All running at the same time.
+
+What is a Thread?
+A thread is the smallest unit of execution in a program.
+It represents a single path of execution within a process.
+
+ In simple terms:
+A thread is like a lightweight sub-program inside your main program that can run independently and in parallel
+with other threads.
+
+✅ In Java:
+Every Java program starts with one main thread.
+You can create additional threads to perform other tasks simultaneously.
+
+📌 Example:
+If you're running a video player:
+Main thread: runs the UI
+One thread: plays video
+Another thread: plays audio
+Another thread: downloads subtitles
+
+All working together at the same time.
+
+Use of Threads in Java :
+Threads in Java allow a program to perform multiple tasks simultaneously,
+improving efficiency and responsiveness. They are especially useful in:
+Server-side applications – to handle multiple client requests at the same time.
+Games and animations – for performing parallel tasks like moving objects and shooting bullets.
+Multitasking environments – to run background tasks without interrupting the main application.
+Threads help run parts of code concurrently, making programs faster and smoother.
+
+What is the Main Thread?
+The main thread is the first thread that runs when a Java program starts.
+It is automatically created by the JVM.
+It is responsible for executing the code inside the main() method.
+It has a default priority 5 (Thread.NORM_PRIORITY)
+Accessed by Thread.currentThread() method
+
+✅ getName() – Get the name of the thread
+✅ setName() – Set a custom name for the thread
+🎯 Why is it useful?
+Helps to identify threads when multiple threads are running.
+Useful in debugging and logging.
+
+✅Context Switch and Time Sharing in Multithreading
+Context Switch: The CPU rapidly switches between multiple threads, giving the illusion that they run simultaneously,
+ though only one executes at a time.
+
+Time Sharing: In a single-processor system, threads share CPU time. The OS schedules and manages this,
+ ensuring efficient CPU usage and minimal idle time.
+
+Multithreading Benefits:
+Threads perform tasks independently.
+Errors in one thread don’t affect others.
+Improves performance and responsiveness.
+
+Example Use Cases: Reading, processing, and writing data using separate threads, or performing animations,
+ playing music, and downloading files at the same time.
+
+🧵 Thread Class in Java
+🔹 What is it?
+The Thread class is part of java.lang package and is used to create and control threads in Java.
+Java allows you to create multithreaded programs by either:
+Extending the Thread class
+Implementing the Runnable interface
+
+✅ Important Methods of Thread Class
+Method	Description
+start():	Starts the thread, and calls the run() method in a new thread
+run():	Contains the code to be executed by the thread
+sleep(ms):	Pauses the current thread for given milliseconds
+join():	Waits for the thread to finish before continuing
+setName(String):	Sets a name for the thread
+getName():	Returns the name of the thread
+setPriority(int): Sets thread priority (1 to 10)
+getPriority(): Returns the priority
+isAlive(): Checks if the thread is still running
+currentThread():	Returns the currently executing thread object
+
+
+
+
+
+
